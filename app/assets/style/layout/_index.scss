@@ -1,5 +1,15 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.hero {
+  background-image: url(https://images.unsplash.com/photo-1612157777902-5382bc6e864b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  height: 582px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+}
+.logo {
+  width: 96px;
+  height: 31px;
 }

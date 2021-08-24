@@ -1,62 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/bootstrap.css">
-    <link rel="stylesheet" href="./assets/style/all.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%- title %>
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/bootstrap.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8bbe8cf63f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/style/all.css">
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
+</head>
+
+<body>
+  <header class="bg-light">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <h1>
+        <a href="./index.html">
+          <img src="./assets/images/DOYOGA-logo.png" class="logo" alt="DOYOGA">
+        </a>
+      </h1>
+      <a href="#" class="d-lg-none link-secondary py-6">
+        <span class="material-icons-outlined">
+          menu
+        </span>
+      </a>
+      <ul class="menu d-none d-lg-block d-lg-flex">
+        <li><a href="#" class="text-dark">課程介紹</a></li>
+        <li><a href="#" class="text-dark">瑜珈空間</a></li>
+        <li><a href="#" class="text-dark">當月課表</a></li>
+      </ul>
+      <div class="d-none d-lg-block">
+        <button type="button" class="btn btn-outline-secondary rounded-pill">立即預約</button>
+        <button type="button" class="btn btn-outline-secondary rounded-pill">聯絡我們</button>
       </div>
     </nav>
+  </header>
 
-    <%- contents %>
+  <section class="hero d-lg-flex align-items-center d-none d-lg-block">
+    <div class="container">
+      <div class="row ">
+        <div class="offset-lg-1 col-lg-11 text-dark">
+          <p>健身輕時尚</p>
+          <h2>DOYOGA，做你的瑜珈</h2>
+          <p>多給自己一點時間享受靜謐，傾聽內心的聲音。</p>
+          <div>
+            <button type="button" class="btn bg-light text-dark">立即預約</button>
+            <button type="button" class="btn bg-primary text-white">課程介紹</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer class="footer">
-      footer
+
+  <%- contents %>
+
+
+    <footer class="bg-secondary text-white pt-8 pb-6">
+      <div class="footer-header border-bottom border-white mb-6">
+        <div class="container ">
+          <div class="row justify-content-lg-between align-items-lg-center">
+            <div class="col-12 col-lg-8">
+              <p class="font-xl pb-2">現在訂閱，獲得課程優惠碼！</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 pb-6">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's username"
+                  aria-describedby="button-addon2">
+                <button class="btn btn-primary text-white" type="button" id="button-addon2">訂閱</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2><a href="./index.html"><img src="./assets/images/DOYOGA-white.png" class="logo mb-2" alt="DOYOGA"></a>
+          </h2>
+          <ul class="d-flex">
+            <li><a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week1/facebook.svg"
+                  class="icon rounded-circle me-2" alt="facebook"></a></li>
+            <li><a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week1/instagram-alt.svg"
+                  class="icon me-2" alt="instagram"></a></li>
+            <li><a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week1/line.svg" class="icon"
+                  alt="line"></a></li>
+          </ul>
+        </div>
+        <div class="d-md-flex flex-direction align-items-end">
+          <div class="col-lg-4">
+            <ul class="row">
+              <li><a href="#" class="text-white mb-2">課程介紹</a></li>
+              <li><a href="#" class="text-white mb-2">瑜珈空間</a></li>
+              <li><a href="#" class="text-white mb-2">當月課表</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4">
+            <p>© 2021. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
     </footer>
 
-    <script src="./assets/js/vendors.js"></script>
+    <a href="#" id="header"></a>
+
+
+    <!-- <script src="./assets/js/vendors.js"></script> -->
     <script src="./assets/js/all.js"></script>
-  </body>
+</body>
 
 </html>
