@@ -1,11 +1,15 @@
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
 a {
+  display: block;
   text-decoration: none;
 }
 
 img {
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 ol,
