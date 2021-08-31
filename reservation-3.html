@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    完成預約
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/bootstrap.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header class="bg-light py-4 sticky-top">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <h1>
+        <a href="./index.html" class="logo">
+          DOYOGA
+        </a>
+      </h1>
+      <!-- 漢堡選單 -->
+      <a class="link-secondary d-lg-none" data-bs-toggle="collapse" href="#collapse1" role="button"
+        aria-expanded="false" aria-controls="collapseExample">
+        <span class="material-icons-outlined font-2xl">
+          menu
+        </span>
+      </a>
+
+      <ul class="menu d-none d-lg-block d-lg-flex">
+        <li><a href="#" class="text-dark px-4 py-2">課程介紹</a></li>
+        <li><a href="#" class="text-dark px-4 py-2">瑜珈空間</a></li>
+        <li><a href="#" class="text-dark px-4 py-2">當月課表</a></li>
+      </ul>
+      <div class="d-none d-lg-block">
+        <a href="./reservation.html" type="button" class="btn btn-outline-secondary rounded-pill me-4">立即預約</a>
+        <a href="./contactUs.html" type="button" class="btn btn-outline-secondary rounded-pill">聯絡我們</a>
+      </div>
+    </nav>
+    <!-- 摺疊 collapse -->
+    <div class="container d-lg-none">
+      <div class="collapse" id="collapse1">
+        <ul class="navbar-nav">
+          <li class="nav-item nav_hover text-center">
+            <a class="nav-link" href="#">課程介紹</a>
+          </li>
+          <li class="nav-item nav_hover text-center">
+            <a class="nav-link" href="#">瑜珈空間</a>
+          </li>
+          <li class="nav-item nav_hover text-center">
+            <a class="nav-link" href="#">當月課表</a>
+          </li>
+          <li class="nav-item nav_hover text-center">
+            <a class="nav-link" href="./reservation.html">立即預約</a>
+          </li>
+          <li class="nav-item nav_hover text-center">
+            <a class="nav-link" href="./contactUs.html">聯絡我們</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+  
+<section class="pt-12 pb-14 pt-md-13">
+    <div class="container">
+        <h2 class="text-secondary text-center font-2xl mb-6 mb-md-4">立即預約</h2>
+        <ul class="d-flex justify-content-center mb-8 mb-md-6 mb-lg-8">
+            <li class="py-3 px-5 px-md-3 px-lg-12 rounded-pill bg-light text-secondary me-4">選擇方案</li>
+            <li class="py-3 px-5 px-md-3 px-lg-12 rounded-pill bg-light text-secondary me-4">填寫資料</li>
+            <li class="py-3 px-5 px-md-3 px-lg-12 rounded-pill bg-secondary text-white">完成預約</li>
+        </ul>
+        <div class="d-flex justify-content-center align-items-center mb-6 mb-lg-8">
+            <div>
+                <div class="mb-5 text-center">
+                    <i class="far fa-check-circle font-3xl text-secondary"></i>
+                </div>
+                <p class="font-l text-secondary">已完成預約，以下是您的預約資訊:</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="mb-6">
+                    <div class="d-flex justify-content-between align-items-center rounded-2 bg-secondary text-white w-100 text-start py-4 px-5"
+                        data-bs-toggle="collapse" href="#info">
+                        <h3 class="font-m">預約資訊</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="collapse border-primary show" id="info">
+                        <div class="card card-body">
+                            <div class="d-flex align-items-center mb-5 mb-mb-4">
+                                <p class="text-secondary me-2">您預約的是</p>
+                                <h3 class="text-primary font-l">首次體驗課程-基礎</h3>
+                            </div>
+                            <p class="text-secondary mb-2">上課預約報到日：2021/07/21</p>
+                            <p class="text-secondary mb-2">預約人：Joanne Chen</p>
+                            <p class="text-secondary mb-2">年齡：18 歲</p>
+                            <p class="text-secondary mb-2">性別：女</p>
+                            <p class="text-secondary mb-2">電子信箱：example123@gmail.com</p>
+                            <p class="text-secondary">手機號碼：0912-345-678</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-8">
+                        <div class="d-flex justify-content-center">
+                            <div>
+                                <h2 class="text-primary font-l text-center">上課注意事項</h2>
+                                <p class="text-primary">第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。<br>
+                                    如欲更改體驗時間請提前通知我們喔！</p>
+                                <div class="mt-8">
+                                    <a href="./index.html"
+                                        class="w-100 bg-primary text-white text-center py-2 rounded-3 font-l mb-2">返回首頁</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <footer class="bg-secondary text-white pt-8 pb-6">
+      <div class="footer-header border-bottom border-white mb-6">
+        <div class="container ">
+          <div class="row justify-content-lg-between align-items-lg-center">
+            <div class="col-12 col-lg-8">
+              <p class="font-xl pb-2">現在訂閱，獲得課程優惠碼！</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 pb-6">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's username"
+                  aria-describedby="button-addon2">
+                <button class="btn btn-primary text-white" type="button" id="button-addon2">訂閱</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2><a href="./index.html"><img src="./assets/images/DOYOGA-white.png" class="logo mb-2" alt="DOYOGA"></a>
+          </h2>
+          <ul class="d-flex">
+            <li><a href="#" class="link-white"><i class="fab fa-facebook font-xl me-2"></i></a></li>
+            <li><a href="#" class="link-white"><i class="fab fa-instagram font-xl me-2"></i></a></li>
+            <li><a href="#" class="link-white"><i class="fab fa-line fs-4 font-xl"></i></a></li>
+          </ul>
+        </div>
+        <div class="d-md-flex align-items-md-end">
+          <div class="col-12 col-md-4">
+            <ul class="row">
+              <li><a href="#" class="text-white mb-2">課程介紹</a></li>
+              <li><a href="#" class="text-white mb-2">瑜珈空間</a></li>
+              <li><a href="#" class="text-white">當月課表</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <p>© 2021. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 社群按鈕 -->
+    <ul class="social-media">
+      <li><a href="#" class="link-secondary"><i class="fab fa-facebook fs-7 mb-2"></i></a></li>
+      <li><a href="#" class="link-secondary"><i class="fab fa-instagram fs-7 mb-2"></i></a></li>
+      <li><a href="#" class="link-secondary"><i class="fab fa-line fs-7"></i></a></li>
+    </ul>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
