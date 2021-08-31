@@ -1,0 +1,57 @@
+.card-img-1 {
+  height: 420px;
+  object-fit: cover;
+  @include mobile {
+    height: 252px;
+  }
+  @include pad {
+    height: 420px;
+  }
+}
+
+.card-img-2 {
+  height: 243px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  @include mobile {
+    border-radius: 16px 0 0 16px;
+  }
+  @include pad {
+    border-radius: 16px 16px 0 0;
+  }
+}
+
+.card-img-3 {
+  width: 100%;
+  height: 628px;
+  object-fit: cover;
+}
+
+.card-cross {
+  @include pad {
+    margin-left: -16%;
+  }
+}
+.card-img-4 {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  @include mobile {
+    height: 266px;
+  }
+  @include pad {
+    height: 444px;
+  }
+}
+
+.card-img-5 {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  @include mobile {
+    height: 117px;
+  }
+  @include pad {
+    height: 207px;
+  }
+}
