@@ -1,7 +1,7 @@
 .logo {
   width: 96px;
   height: 31px;
-  @include hide-text();
+  @include hide-text;
   background-image: url(../images/DOYOGA-logo.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -24,4 +24,10 @@
   transform: translateY(-50%);
   text-align: center;
   z-index: 2;
+}
+
+.course-time {
+  position: absolute;
+  top: -10px;
+  left: 20px;
 }
