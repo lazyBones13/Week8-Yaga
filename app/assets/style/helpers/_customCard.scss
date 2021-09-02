@@ -69,3 +69,17 @@
   height: 196px;
   object-fit: cover;
 }
+
+.card-img-8 {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+}
+
+.card-img-9 {
+  width: 100%;
+  min-height: 550px;
+  @include pad {
+    min-height: 450px;
+  }
+}
