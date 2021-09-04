@@ -26,6 +26,10 @@ var swiper = new Swiper('.mySwiper2', {
       spaceBetween: 0
     }
   }
+}); //AOS
+
+AOS.init({
+  once: true
 }); //日曆
 
 var elem = document.querySelector('input[name="datepicker"]');
