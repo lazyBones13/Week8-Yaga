@@ -26,6 +26,11 @@ var swiper = new Swiper('.mySwiper2', {
   },
 })
 
+//AOS
+AOS.init({
+  once: true,
+})
+
 //日曆
 const elem = document.querySelector('input[name="datepicker"]')
 const datepicker = new Datepicker(elem, {
