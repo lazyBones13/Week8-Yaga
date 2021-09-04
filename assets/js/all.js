@@ -14,6 +14,18 @@ var swiper = new Swiper('.mySwiper', {
       spaceBetween: 30
     }
   }
+});
+var swiper = new Swiper('.mySwiper2', {
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 0
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 0
+    }
+  }
 }); //日曆
 
 var elem = document.querySelector('input[name="datepicker"]');
